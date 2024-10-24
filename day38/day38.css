@@ -1,0 +1,27 @@
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.green-underline {
+    text-decoration: underline;
+    text-decoration-color: green;
+    color: black;
+}
+
+.red-dashed {
+    border-top: 2px dashed red;
+    border-bottom: 2px dashed red;
+}
+
+.blue-dotted {
+    border: 2px dotted blue;
+    padding: 10px; /* ვრცელდება ტექსტზე */
+}
