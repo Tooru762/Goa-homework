@@ -1,12 +1,127 @@
+
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>მოგზაურობის საიტი</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            margin: 20px 0;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .destination {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+        .destination img {
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>მოგზაურობის საიტი</h1>
+        <nav>
+            <a href="#about">ჩვენ შესახებ</a>
+            <a href="#destinations">მოგზაურობის მიმართულებები</a>
+            <a href="#contact">კონტაქტი</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>ჩვენ შესახებ</h2>
+            <p>ჩვენ ვართ ტურისტული სააგენტო, რომელიც გთავაზობთ საუკეთესო მოგზაურობის გამოცდილებას. ჩვენ შეგვიძლია დაგეხმაროთ თქვენი შემდეგი თავგადასავლის დაგეგმვაში!</p>
+        </section>
+
+        <section id="destinations">
+            <h2>მოგზაურობის მიმართულებები</h2>
+            <div class="destination">
+                <img src="https://via.placeholder.com/200" alt="მომსახურების ადგილი 1">
+                <div>
+                    <h3>პარიზი</h3>
+                    <p>პარიზი, ცნობილი თავისი კულტურული მემკვიდრეობისა და ლამაზ მნახველებით, როგორიცაა ეიფელის კოშკი და ლუვრი.</p>
+                </div>
+            </div>
+            <div class="destination">
+                <img src="https://via.placeholder.com/200" alt="მომსახურების ადგილი 2">
+                <div>
+                    <h3>ტოკიო</h3>
+                    <p>ტოკიო - ქალაქი, რომელიც აერთიანებს თანამედროვე ტექნოლოგიებს და ტრადიციულ კულტურას.</p>
+                </div>
+            </div>
+            <div class="destination">
+                <img src="https://via.placeholder.com/200" alt="მომსახურების ადგილი 3">
+                <div>
+                    <h3>ნიუ-იორკი</h3>
+                    <p>ნიუ-იორკი, ცნობილი თავისი ღვთიური ადგილებით, როგორიცაა ტაიმს სკვერი და ცენტრალური პარკი.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>კონტაქტი</h2>
+            <p>ჩვენთან დაკავშირებისათვის, გთხოვთ შეგვატყობინოთ.</p>
+            <form>
+                <label for="name">სახელი:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">ელ. ფოსტა:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <input type="submit" value="გაგზავნა">
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 მოგზაურობის სააგენტო</p>
+    </footer>
 </body>
-</html> 
-<h1>tooru</h1>
+</html>
+```
+
+
+
