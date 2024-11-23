@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Border Style</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+    }
+    .solid { border: 2px solid black; }
+    .dashed { border: 2px dashed black; }
+    .dotted { border: 2px dotted black; }
+    .double { border: 4px double black; }
+    .groove { border: 4px groove black; }
+    .ridge { border: 4px ridge black; }
+    .inset { border: 4px inset black; }
+    .outset { border: 4px outset black; }
+  </style>
+</head>
+<body>
+  <div class="box solid"></div>
+  <div class="box dashed"></div>
+  <div class="box dotted"></div>
+  <div class="box double"></div>
+  <div class="box groove"></div>
+  <div class="box ridge"></div>
+  <div class="box inset"></div>
+  <div class="box outset"></div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Table</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    td, th {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+      <th>Header 4</th>
+      <th>Header 5</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>12</td>
+      <td>13</td>
+      <td>14</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>17</td>
+      <td>18</td>
+      <td>19</td>
+      <td>20</td>
+    </tr>
+  </table>
+</body>
+</html>
+
+<style>
+    td {
+      padding: 10px; /* 10px სივრცე ყველა მხარეს */
+    }
+  </style>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Table Example</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th, td {
+        border: 2px solid black;
+        padding: 15px;
+        text-align: center;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2; /* ლუწი რიგების ფონი */
+      }
+      tr:nth-child(even):hover {
+        background-color: #c2e0f4; /* ლუწი hover ფერი */
+      }
+      tr:nth-child(odd):hover {
+        background-color: #f4d4c2; /* კენტი hover ფერი */
+      }
+      th {
+        background-color: #4CAF50;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Alice</td>
+        <td>24</td>
+        <td>New York</td>
+        <td>USA</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Bob</td>
+        <td>30</td>
+        <td>London</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Charlie</td>
+        <td>28</td>
+        <td>Berlin</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Diana</td>
+        <td>22</td>
+        <td>Paris</td>
+        <td>France</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Eve</td>
+        <td>35</td>
+        <td>Tokyo</td>
+        <td>Japan</td>
+      </tr>
+    </table>
+  </body>
+  </html>
+  
