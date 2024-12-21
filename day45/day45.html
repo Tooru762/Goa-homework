@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ჩემი ვებგვერდი</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f0f8ff;
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      color: #555;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+    .button:hover {
+      transform: scale(1.2);
+      background-color: #ff5722;
+    }
+  </style>
+</head>
+<body>
+  <h1>გამარჯობა! მე ვარ [luka]</h1>
+  <p>ეს არის ჩემი ვებგვერდი. აქ თქვენ გაიგებთ მეტს ჩემს შესახებ.</p>
+  <a href="#" class="button">ჩემს შესახებ</a>
+  <a href="#" class="button">პორტფოლიო</a>
+  <a href="#" class="button">კონტაქტი</a>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ფორმები</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      background-color: #f9f9f9;
+      height: 100vh;
+      margin: 0;
+    }
+    .shape {
+      width: 100px;
+      height: 100px;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+    .shape:hover {
+      transform: scale(1.2);
+      background-color: #ff9800;
+    }
+    .lemon {
+      background-color: #f4d03f;
+      border-radius: 50% 50% 30% 30%;
+    }
+    .strawberry {
+      background-color: #e74c3c;
+      border-radius: 50%;
+      position: relative;
+    }
+    .strawberry:before {
+      content: '';
+      width: 60px;
+      height: 20px;
+      background-color: #27ae60;
+      border-radius: 50%;
+      position: absolute;
+      top: -10px;
+      left: 20px;
+    }
+    .eggplant {
+      background-color: #8e44ad;
+      border-radius: 50% 50% 20% 20%;
+    }
+    .bmw {
+      background-color: #007bff;
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="shape lemon"></div>
+  <div class="shape strawberry"></div>
+  <div class="shape eggplant"></div>
+  <div class="shape bmw"></div>
+</body>
+</html>

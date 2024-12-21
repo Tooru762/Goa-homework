@@ -1,0 +1,27 @@
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model Example</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 100px;
+      padding: 20px; /* შიგთავსის სივრცე */
+      border: 5px solid #007bff; /* ჩარჩო */
+      margin: 30px; /* გარე სივრცე */
+      background-color: #f0f8ff; /* ფონის ფერი */
+    }
+  </style>
+</head>
+<body>
+  <div class="box">ეს არის Box Model</div>
+</body>
+</html>
+.box {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid black;
+    box-sizing: border-box; /* ზომები მოიცავს padding-სა და border-ს */
+  }
+  
