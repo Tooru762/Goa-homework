@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile and Recipe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .profile-card {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+            margin: 20px;
+        }
+        .profile-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .profile-card h2 {
+            margin: 5px 0;
+        }
+        .profile-card p {
+            margin: 10px 0;
+            color: #a3ff00;
+        }
+        .profile-card a {
+            display: block;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin: 5px 0;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .profile-card a:hover {
+            background-color: #555;
+        }
+
+        .recipe-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-width: 600px;
+            margin: 20px;
+        }
+        .recipe-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .recipe-card h1 {
+            margin: 20px 0 10px;
+        }
+        .recipe-card h3 {
+            margin: 10px 0;
+            color: #a35b00;
+        }
+        .recipe-card ul {
+            padding: 0;
+            list-style: none;
+        }
+        .recipe-card ul li {
+            margin: 5px 0;
+        }
+        .nutrition {
+            background-color: #f7f7f7;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Profile Card -->
+    <div class="profile-card">
+        <img src="https://via.placeholder.com/100" alt="Profile Picture">
+        <h2>Jessica Randall</h2>
+        <p>London, United Kingdom</p>
+        <p>"Front-end developer and avid reader."</p>
+        <a href="#">GitHub</a>
+        <a href="#">Frontend Mentor</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+    </div>
+
+    <!-- Recipe Card -->
+    <div class="recipe-card">
+        <img src="https://via.placeholder.com/600x300" alt="Omelette">
+        <h1>Simple Omelette Recipe</h1>
+        <p>An easy and quick dish, perfect for any meal.</p>
+        <h3>Preparation time:</h3>
+        <ul>
+            <li>Total: Approximately 10 minutes</li>
+            <li>Preparation: 5 minutes</li>
+            <li>Cooking: 5 minutes</li>
+        </ul>
+        <h3>Ingredients:</h3>
+        <ul>
+            <li>2-3 large eggs</li>
+            <li>Salt, to taste</li>
+            <li>Pepper, to taste</li>
+            <li>1 tablespoon of butter or oil</li>
+            <li>Optional fillings: cheese, vegetables, meats</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol>
+            <li>Beat the eggs with salt and pepper until well mixed.</li>
+            <li>Heat a pan over medium heat and add butter or oil.</li>
+            <li>Pour in the eggs and cook evenly.</li>
+            <li>Add fillings if desired, fold, and cook for another minute.</li>
+            <li>Serve hot and enjoy!</li>
+        </ol>
+        <div class="nutrition">
+            <h3>Nutrition:</h3>
+            <ul>
+                <li>Calories: 277 kcal</li>
+                <li>Protein: 20g</li>
+                <li>Carbs: 0g</li>
+                <li>Fat: 22g</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
