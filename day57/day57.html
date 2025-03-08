@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Example</title>
+  <style>
+    .button {
+      padding: 20px 40px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      background-color: #3498db;
+      color: white;
+      cursor: pointer;
+      transition: all 0.5s ease;
+    }
+
+    .button:hover {
+      background-color: #e74c3c;
+      transform: scale(1.1);
+    }
+
+    .button:active {
+      transform: rotate(360deg) scale(1.2);
+      background-color: #2ecc71;
+    }
+  </style>
+</head>
+<body>
+  <button class="button">Click Me</button>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Example</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+
+    .image {
+      width: 200px;
+      height: 200px;
+      background-image: url('your-image-url.jpg'); /* შეცვალეთ თქვენი სურათით */
+      background-size: cover;
+      transition: transform 0.5s, top 0.5s, left 0.5s;
+      position: relative;
+    }
+
+    .image:hover {
+      transform: rotate(360deg);
+      left: 500px;
+      top: 300px;
+    }
+
+    .image:active {
+      transform: scale(0.5) rotate(-90deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="image"></div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Div Example</title>
+  <style>
+    .div-box {
+      width: 200px;
+      height: 200px;
+      background-color: darkgreen;
+      border-radius: 10px;
+      transition: all 1s ease;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .div-box:hover {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background-color: blue;
+      box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);
+    }
+
+    .div-box:active {
+      transform: rotate(720deg);
+      background-color: purple;
+      border-radius: 30px;
+      box-shadow: 0 0 30px rgba(255, 0, 255, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="div-box"></div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Div Example</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .div-box {
+      width: 500px;
+      height: 500px;
+      background-color: lightgray;
+      position: relative;
+      transition: all 0.6s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .div-box:hover {
+      width: 600px;
+      height: 600px;
+    }
+
+    .div-box:active {
+      background-color: green;
+      transform: rotateX(360deg);
+      transition: background-color 0.4s ease, transform 0.6s ease;
+    }
+
+    .name {
+      opacity: 0;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      transition: opacity 0.6s ease;
+    }
+
+    .div-box:active .name {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="div-box">
+    <div class="name">daawire amas tu nigeri xar</div>
+  </div>
+</body>
+</html>
