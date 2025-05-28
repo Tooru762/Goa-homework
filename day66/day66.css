@@ -1,0 +1,39 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #555;
+}
+/* style.css */
+#main-title {
+  color: darkblue;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+button:hover {
+  background-color: lightgreen;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  background-color: #ddd;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+}
