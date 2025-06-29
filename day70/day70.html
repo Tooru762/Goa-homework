@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Word Tools</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f5f5f5;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .section {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input, button {
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .output {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #2b2b2b;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. Split and Join -->
+  <div class="section">
+    <h2>1. Split on "g" and join with "G"</h2>
+    <input type="text" id="splitInput" placeholder="Enter a word...">
+    <br>
+    <button onclick="splitAndJoin()">Process</button>
+    <div class="output" id="splitOutput"></div>
+  </div>
+
+  <!-- 2. Invert Case -->
+  <div class="section">
+    <h2>2. Invert Case</h2>
+    <input type="text" id="invertInput" placeholder="Enter a word...">
+    <br>
+    <button onclick="invertCase()">Invert</button>
+    <div class="output" id="invertOutput"></div>
+  </div>
+
+  <!-- 3. Join Numbers with @ -->
+  <div class="section">
+    <h2>3. Join Numbers with '@'</h2>
+    <input type="text" id="joinInput" placeholder="Enter numbers (e.g. 1,2,3)">
+    <br>
+    <button onclick="joinNumbers()">Join</button>
+    <div class="output" id="joinOutput"></div>
+  </div>
+
+  <script>
+    function splitAndJoin() {
+      const word = document.getElementById('splitInput').value;
+      const result = word.split('g').join('G');
+      document.getElementById('splitOutput').innerText = `Result: ${result}`;
+    }
+
+    function invertCase() {
+      const word = document.getElementById('invertInput').value;
+      let result = '';
+      for (let ch of word) {
+        result += (ch === ch.toUpperCase()) ? ch.toLowerCase() : ch.toUpperCase();
+      }
+      document.getElementById('invertOutput').innerText = `Result: ${result}`;
+    }
+
+    function joinNumbers() {
+      const input = document.getElementById('joinInput').value;
+      const nums = input.split(',').map(n => n.trim());
+      const result = nums.join('@');
+      document.getElementById('joinOutput').innerText = `Result: ${result}`;
+    }
+  </script>
+
+</body>
+</html>
