@@ -1,0 +1,31 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+  padding: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  gap: 1.5rem;
+
+  /* ძირითადი ნაწილი — responsive columns */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* ბარათის სტილი */
+.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
