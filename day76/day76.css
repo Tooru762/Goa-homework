@@ -1,31 +1,76 @@
-/* Reset */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-body {
-  font-family: sans-serif;
-  background-color: #f0f0f0;
-  padding: 2rem;
-}
-
-.grid-container {
+.container {
   display: grid;
-  gap: 1.5rem;
-
-  /* ძირითადი ნაწილი — responsive columns */
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: 800px;
+  margin: 50px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  grid-template-columns: 1fr;
 }
 
-/* ბარათის სტილი */
-.card {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
+.header, .pricing, .features {
+  padding: 30px;
+}
+
+.header {
+  background: #fff;
+}
+
+.pricing {
+  background: hsl(179, 62%, 43%);
+  color: white;
+}
+
+.features {
+  background: hsl(179, 47%, 52%);
+  color: white;
+}
+
+.price {
+  font-size: 2rem;
+}
+
+.price span {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+button {
+  margin-top: 20px;
+  padding: 15px;
+  width: 100%;
+  background: hsl(71, 73%, 54%);
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "pricing features";
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .pricing {
+    grid-area: pricing;
+  }
+
+  .features {
+    grid-area: features;
+  }
 }
